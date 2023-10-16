@@ -282,7 +282,7 @@ button {
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    background-color: #8b0000;
+    background-color: #000000;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -291,7 +291,7 @@ button {
 }
 
 button:hover {
-    background-color: #660000;
+    background-color: #000000;
 }
 
 .social-links {
@@ -312,7 +312,7 @@ button:hover {
     display: block;
     width: 50px;
     height: 50px;
-    background-color: #8b0000;
+    background-color: #000000;
     color: #fff;
     border-radius: 50%;
     font-size: 24px;
