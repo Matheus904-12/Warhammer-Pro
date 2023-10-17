@@ -56,18 +56,19 @@
             <h2>Raças em Warhammer</h2>
             <p>Existem várias raças no universo de Warhammer, incluindo:</p>
             <ul>
-                <li>Humanos</li>
-                <li>Elfos</li>
-                <li>Anões</li>
-                <li>Orcs</li>
-                <li>Skavens</li>
-                <li>Altos Elfos</li>
-                <li>Caos</li>
+                <li><button onclick="mostrarModelo('humano')">Humanos</button></li>
+                <li><button onclick="mostrarModelo('elfo')">Elfos</button></li>
+                <li><button onclick="mostrarModelo('anao')">Anões</button></li>
+                <li><button onclick="mostrarModelo('orc')">Orcs</button></li>
+                <li><button onclick="mostrarModelo('skaven')">Skavens</button></li>
+                <li><button onclick="mostrarModelo('alto-elfo')">Altos Elfos</button></li>
+                <li><button onclick="mostrarModelo('caos')">Caos</button></li>
                 <li>... e muitas mais!</li>
             </ul>
         </div>
+        <model-viewer id="model-viewer" src="textures/" alt=""></model-viewer>
     </section>
-
+    
     <section id="factions" class="section-gray">
         <div class="container">
             <h2>Facções</h2>
@@ -229,7 +230,7 @@
                 <div class="card">
                     <div class="card-inner">
                         <div class="card-front">
-                            <img src="img/image1.jpg" alt="Imagem 1">
+                            <img src="img/galeria3.jpg" alt="Imagem 1">
                         </div>
                         <div class="card-back">
                             <p>Descrição da Imagem 1</p>
@@ -271,6 +272,9 @@
     
     <script src="script.js"></script>
     <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script src="https://threejs.org/build/three.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
 </body>
 </body>
 </html>

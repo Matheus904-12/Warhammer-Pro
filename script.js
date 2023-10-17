@@ -51,3 +51,23 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     // Exemplo simples para exibir a mensagem
     document.getElementById("registrationMessage").textContent = "Usuário cadastrado com sucesso!";
 });
+
+function mostrarModelo(raça) {
+    const modelViewer = document.getElementById('model-viewer');
+    switch (raça) {
+        case 'humano':
+            modelViewer.src = 'caminho/para/modelo/humano.glb';
+            modelViewer.alt = 'Modelo de Humano';
+            break;
+        case 'elfo':
+            modelViewer.src = 'caminho/para/modelo/elfo.glb';
+            modelViewer.alt = 'Modelo de Elfo';
+            break;
+        // Adicione os casos para as outras raças aqui
+        default:
+            // Se nenhuma raça corresponder, limpe o modelo
+            modelViewer.src = '';
+            modelViewer.alt = '';
+            break;
+    }
+}

@@ -1,0 +1,607 @@
+/* Reset e Estilos Básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #222;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Modo Escuro */
+body.dark-mode {
+    background-color: #111;
+}
+
+body.dark-mode h2,
+body.dark-mode p {
+    color: #fff;
+}
+
+/* Estilizando a barra de navegação */
+header {
+    background-color: transparent; /* Inicia transparente */
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    align-items: center; /* Centraliza os elementos verticalmente */
+}
+
+header.scrolled {
+    background-color: rgba(17, 17, 17, 0.9); /* Adicione a cor desejada quando a barra estiver rolada */
+    transition: background-color 0.3s; /* Adicione uma transição suave */
+}
+
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #50e5e6;
+}
+
+.logo img {
+    max-width: 150px; /* Ajuste o tamanho da logo conforme necessário */
+    height: auto;
+}
+
+/* Estilos das Seções */
+section {
+    padding: 80px 0;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #50e5e6;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #aaa;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+li {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Estilos da Galeria de Imagens */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos do Formulário de Contato e Login */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px 0;
+    width: 300px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #50e5e6;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3cbcbf;
+}
+
+/* Animações */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Adicionando Imagens de Fundo e Outros Elementos Gráficos */
+#about {
+    background-image: url('img/about_bg.jpg');
+    background-size: cover;
+}
+
+#races {
+    background-image: url('img/races_bg.jpg');
+    background-size: cover;
+}
+
+#factions {
+    background-image: url('img/factions_bg.jpg');
+    background-size: cover;
+}
+
+#units {
+    background-image: url('img/units_bg.jpg');
+    background-size: cover;
+}
+
+#battles {
+    background-image: url('img/battles_bg.jpg');
+    background-size: cover;
+}
+
+#gallery {
+    background-image: url('img/gallery_bg.jpg');
+    background-size: cover;
+}
+
+#contact {
+    background-image: url('img/contact_bg.jpg');
+    background-size: cover;
+}
+
+#login {
+    background-image: url('img/login_bg.jpg');
+    background-size: cover;
+}
+
+/* Estilizando a barra de rolagem */
+::-webkit-scrollbar {
+    width: 12px;
+    position: fixed; /* Fixa a barra de rolagem na tela */
+    top: 50%; /* Ajusta a posição vertical */
+    transform: translateY(-50%); /* Ajusta a posição vertical */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #111; /* Cor de fundo da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #002240; /* Cor da alça da barra de rolagem */
+    border-radius: 10px; /* Borda arredondada da alça */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Sombra para destacar a alça */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #003366; /* Cor da alça ao passar o mouse */
+}
+
+/* Estilos do Footer */
+.footer {
+    background-color: #000;
+    padding: 40px 0;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    max-width: 150px; /* Ajuste o tamanho da logo conforme necessário */
+    height: auto;
+}
+
+.login-form {
+    max-width: 300px; /* Ajuste o tamanho conforme necessário */
+}
+
+.login-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+.social-links {
+    text-align: center;
+}
+
+.social-links h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.social-button {
+    display: inline-block;
+    margin: 10px;
+}
+
+.social-button a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.social-button a:hover {
+    background-color: #660000;
+}
+
+/* Estilos das Seções com Cores Diferentes */
+.section-gray {
+    background-color: #333;
+    color: #ccc;
+}
+
+.section-black {
+    background-color: #111;
+    color: #fff;
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.parallax {
+    background-image: url('videoplayback.mp4'); /* Substitua com o caminho da sua imagem */
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+/* Novo CSS para o título com gradiente */
+.video-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 135px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #FF0000, #000000, #FFFFFF, #808080);
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+@keyframes degrade {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilizando a Seção "Sobre Warhammer" */
+#about .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-content {
+    max-width: 600px;
+}
+
+.video-frame {
+    max-width: 600px;
+    width: 100%;
+    padding-bottom: 30.5%; /* Proporção 16:9 (9 dividido por 16 vezes 100) */
+    position: relative;
+    margin-top: 70px; /* Adicionando um espaço vertical de 20 pixels */
+}
+
+.video-frame iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* Estilos do Carrossel */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.carousel .card {
+    perspective: 1000px;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.carousel .card-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.carousel .card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.carousel .card-front, .carousel .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.carousel .card-front {
+    background-color: #222;
+}
+
+.carousel .card-back {
+    background-color: #333;
+    transform: rotateY(180deg);
+}
+
+.carousel .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel .card p {
+    color: #fff;
+    text-align: center;
+}
+
+
+.battle-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.battle-text {
+    width: 45%;
+}
+
+.battle-carousel {
+    width: 45%;
+    display: flex;
+    overflow-x: auto;
+    margin: -10px;
+    padding: 10px;
+}
+
+.battle-card {
+    width: 300px;
+    height: 300px;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    transform-style: preserve-3d;
+    flex-shrink: 0;
+}
+
+.battle-card:hover {
+    transform: rotate(0deg) scale(1) translateY(10px);
+}
+
+.battle-card h3,
+.battle-card p {
+    color: #fff;
+    transition: transform 0.3s;
+}
+
+.battle-card p {
+    font-size: 14px;
+    margin-top: 10px;
+    height: 70%;
+    overflow: auto;
+    padding: 5px;
+}
+
+.battle-card:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+
+.battle-card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.unit-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.unit {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+
+.card:hover .caption {
+    transform: translateY(0);
+}
+
+.caption h3,
+.caption p {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
