@@ -71,3 +71,6 @@ function mostrarModelo(raça) {
             break;
     }
 }
+
+/*carrossel*/
+
