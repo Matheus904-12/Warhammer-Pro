@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warhammer</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <section id="top"></section>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#races">Raças</a></li>
+                <li><a href="#factions">Facções</a></li>
+                <li><a href="#units">Unidades</a></li>
+                <li>
+                    <div class="logo">
+                        <a href="#top">
+                        <img src="./img/logo.png" alt="Logo do Warhammer">
+                        </a>
+                    </div>
+                </li>
+                <li><a href="#battles">Batalhas</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="https://store.steampowered.com/tags/en/Warhammer+40K?l=portuguese">Jogar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <video autoplay muted loop id="video-background">
+        <source src="/video/videoplayback2.mp4" type="video/mp4">
+    </video>
+    <h1 class="video-title">40k: Eternal War</h1>
+    <div class="parallax"></div>
+
+    <section id="about" class="section-gray">
+        <div class="container">
+            <div class="text-content">
+                <h2>Sobre Warhammer</h2>
+                <p>Warhammer é um universo de fantasia criado pela Games Workshop. Ele serve de cenário para vários jogos de tabuleiro, jogos de vídeo, livros e outros tipos de mídia.</p>
+            </div>
+            <div class="video-frame">
+                    <iframe src="https://www.youtube.com/embed/x1L36tESjzw?si=-fYbNHvbFgUJPJV-&amp;start=1" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="races" class="section-black">
+        <div class="container">
+            <h2>Raças em Warhammer</h2>
+            <p>Existem várias raças no universo de Warhammer, incluindo:</p>
+            <ul>
+                <li><button onclick="mostrarModelo('humano')">Humanos</button></li>
+                <li><button onclick="mostrarModelo('elfo')">Elfos</button></li>
+                <li><button onclick="mostrarModelo('anao')">Anões</button></li>
+                <li><button onclick="mostrarModelo('orc')">Orcs</button></li>
+                <li><button onclick="mostrarModelo('skaven')">Skavens</button></li>
+                <li><button onclick="mostrarModelo('alto-elfo')">Altos Elfos</button></li>
+                <li><button onclick="mostrarModelo('caos')">Caos</button></li>
+                <li>... e muitas mais!</li>
+            </ul>
+        </div>
+        <model-viewer id="model-viewer" src="textures/" alt=""></model-viewer>
+    </section>
+    
+    <section id="factions" class="section-gray">
+        <div class="container">
+            <h2>Facções</h2>
+            <p>Cada raça possui diferentes facções, cada uma com sua própria história, objetivos e estilo de jogo.</p>
+            <p>Por exemplo, os Elfos têm facções como os Elfos da Floresta, os Elfos Negros e os Elfos do Caos.</p>
+        </div>
+    </section>
+
+    <section id="units" class="section-black">
+        <div class="container">
+            <h2>Unidades em Warhammer</h2>
+            <p class="section-description">
+                Unidades em Warhammer 40k: Forças que Moldam o Destino
+            <div class="unit-list">
+                <div class="unit">
+                    <div class="card">
+                        <img src="img/unidade1.jpeg" alt="Unidade 1">
+                        <div class="caption">
+                            <h3>Título da Imagem 1</h3>
+                            <p>Descrição da Unidade 1.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="unit">
+                    <div class="card">
+                        <img src="caminho/para/imagem2.jpg" alt="Unidade 2">
+                        <div class="caption">
+                            <h3>Título da Imagem 2</h3>
+                            <p>Descrição da Unidade 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="unit">
+                    <div class="card">
+                        <img src="caminho/para/imagem2.jpg" alt="Unidade 2">
+                        <div class="caption">
+                            <h3>Título da Imagem 2</h3>
+                            <p>Descrição da Unidade 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="unit">
+                    <div class="card">
+                        <img src="caminho/para/imagem2.jpg" alt="Unidade 2">
+                        <div class="caption">
+                            <h3>Título da Imagem 2</h3>
+                            <p>Descrição da Unidade 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="unit">
+                    <div class="card">
+                        <img src="caminho/para/imagem2.jpg" alt="Unidade 2">
+                        <div class="caption">
+                            <h3>Título da Imagem 2</h3>
+                            <p>Descrição da Unidade 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="unit">
+                    <div class="card">
+                        <img src="caminho/para/imagem2.jpg" alt="Unidade 2">
+                        <div class="caption">
+                            <h3>Título da Imagem 2</h3>
+                            <p>Descrição da Unidade 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Adicione mais unidades conforme necessário -->
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <section id="battles" class="section-gray">
+        <div class="container">
+            <h2>Batalhas Épicas</h2>
+            <div class="battle-container">
+                <div class="battle-text">
+                    <h3>Mundos de Warhammer 40k:</h3>
+                    <p>Texto descritivo sobre os mundos de Warhammer 40k.</p>
+                    <!-- Adicione mais textos conforme necessário -->
+                </div>
+                <div class="battle-carousel">
+                    <div class="battle-card">
+                        <img src="terra.jpg" alt="Terra">
+                        <h3>Terra</h3>
+                        <p>O planeta natal da humanidade...</p>
+                    </div>
+                    <div class="battle-card">
+                        <img src="cadia.jpg" alt="Cadia">
+                        <h3>Cadia</h3>
+                        <p>Um planeta fortificado que serviu como a linha de frente contra as forças do Chaos...</p>
+                    </div>
+                    <div class="battle-card">
+                        <img src="cadia.jpg" alt="Cadia">
+                        <h3>Cadia</h3>
+                        <p>Um planeta fortificado que serviu como a linha de frente contra as forças do Chaos...</p>
+                    </div>
+                    <div class="battle-card">
+                        <img src="cadia.jpg" alt="Cadia">
+                        <h3>Cadia</h3>
+                        <p>Um planeta fortificado que serviu como a linha de frente contra as forças do Chaos...</p>
+                    </div>
+                    <div class="battle-card">
+                        <img src="cadia.jpg" alt="Cadia">
+                        <h3>Cadia</h3>
+                        <p>Um planeta fortificado que serviu como a linha de frente contra as forças do Chaos...</p>
+                    </div>
+                    <div class="battle-card">
+                        <img src="cadia.jpg" alt="Cadia">
+                        <h3>Cadia</h3>
+                        <p>Um planeta fortificado que serviu como a linha de frente contra as forças do Chaos...</p>
+                    </div>
+                    <!-- Adicione mais cards aqui conforme necessário -->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section id="gallery" class="section-black">
+    <div class="your-element" data-tilt>
+        <div class="container">
+            <h2>Galeria</h2>
+                <div class="carousel">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="img/galeria1.jpg" alt="Imagem 1">
+                        </div>
+                        <div class="card-back">
+                            <p>Descrição da Imagem 1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="img/galeria2.jpg" alt="Imagem 1">
+                        </div>
+                        <div class="card-back">
+                            <p>Descrição da Imagem 1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://i0.wp.com/news.xbox.com/pt-br/wp-content/uploads/sites/8/2021/12/SpaceMarine2_RevealTrailer_screenshot_logo_1080p_04-1.jpg?resize=1920%2C1080&ssl=1" alt="Imagem 1">
+                        </div>
+                        <div class="card-back">
+                            <p>Descrição da Imagem 1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="img/galeria3.jpg" alt="Imagem 1">
+                        </div>
+                        <div class="card-back">
+                            <p>Descrição da Imagem 1</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            <!-- Adicione mais cartões conforme necessário -->
+            </div>
+        </div>
+    </div>
+    </section>
+        
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="logo">
+                        <a href="#top">
+                        <img src="./img/logo.png" alt="Logo do Warhammer">
+                        </a>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3>Nossas Redes Sociais</h3>
+                        <div class="social-button">
+                            <a href="https://www.facebook.com/warhammer40000uk" class="fa fa-facebook"></a>
+                        </div>
+                        <div class="social-button">
+                            <a href="https://www.instagram.com/warhammer_brasil/" class="fa fa-instagram"></a>
+                        </div>
+                        <div class="social-button">
+                            <a href="https://warhammer40000.com/" class="fa fa-community"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+    <script src="script.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script src="https://threejs.org/build/three.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+</body>
+</body>
+</html>
